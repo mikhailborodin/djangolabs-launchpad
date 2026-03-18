@@ -37,8 +37,8 @@ const ServicesSection = () => (
       </div>
 
       <div className="text-center">
-        <Button variant="hero" size="lg" asChild>
-          <a href="#book">Book a call <ArrowRight size={16} /></a>
+        <Button variant="hero" size="lg" onClick={() => window.dispatchEvent(new CustomEvent("open-booking-modal"))}>
+          Book a call <ArrowRight size={16} />
         </Button>
       </div>
     </div>

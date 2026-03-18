@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import SocialProof from "@/components/SocialProof";
@@ -15,22 +15,27 @@ import BookingModal from "@/components/BookingModal";
 
 const Index = () => {
   const [bookingOpen, setBookingOpen] = useState(false);
-  const openBooking = () => setBookingOpen(true);
+
+  useEffect(() => {
+    const handler = () => setBookingOpen(true);
+    window.addEventListener("open-booking-modal", handler);
+    return () => window.removeEventListener("open-booking-modal", handler);
+  }, []);
 
   return (
     <div className="min-h-screen">
-      <Navbar onBookClick={openBooking} />
+      <Navbar onBookClick={() => setBookingOpen(true)} />
       <HeroSection />
       <SocialProof />
       <ProductsSection />
       <ServicesSection />
       <HowWeWork />
       <CaseStudies />
-      <BookingSection onBookClick={openBooking} />
+      <BookingSection onBookClick={() => setBookingOpen(true)} />
       <LeadForm />
       <AboutSection />
       <SiteFooter />
-      <StickyBookCTA onBookClick={openBooking} />
+      <StickyBookCTA onBookClick={() => setBookingOpen(true)} />
       <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
     </div>
   );
