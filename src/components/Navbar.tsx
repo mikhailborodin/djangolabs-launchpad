@@ -27,6 +27,7 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+          <ThemeToggle />
           <Button variant="hero" size="default" asChild>
             <a href="#book">Book a call</a>
           </Button>
