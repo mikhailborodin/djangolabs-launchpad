@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const BookingSection = () => (
+const BookingSection = ({ onBookClick }: { onBookClick: () => void }) => (
   <section id="book" className="py-24">
     <div className="container">
       <motion.div
@@ -25,10 +25,8 @@ const BookingSection = () => (
 
         <p className="text-sm text-muted-foreground">No commitment. Just useful insights.</p>
 
-        <Button variant="hero" size="xl" asChild>
-          <a href="#book">
-            Book a call <ArrowRight size={18} />
-          </a>
+        <Button variant="hero" size="xl" onClick={onBookClick}>
+          Book a call <ArrowRight size={18} />
         </Button>
 
         <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
