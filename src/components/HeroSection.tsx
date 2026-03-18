@@ -27,10 +27,8 @@ const HeroSection = () => (
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button variant="hero" size="xl" asChild>
-            <a href="#book">
+          <Button variant="hero" size="xl" onClick={() => window.dispatchEvent(new CustomEvent("open-booking-modal"))}>
               Book a call <ArrowRight size={18} />
-            </a>
           </Button>
           <Button variant="heroOutline" size="xl" asChild>
             <a href="#contact">Get project estimate</a>

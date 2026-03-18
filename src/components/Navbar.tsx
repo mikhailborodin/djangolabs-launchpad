@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Results", href: "#results" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ onBookClick }: { onBookClick: () => void }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -28,8 +28,8 @@ const Navbar = () => {
             </a>
           ))}
           <ThemeToggle />
-          <Button variant="hero" size="default" asChild>
-            <a href="#book">Book a call</a>
+          <Button variant="hero" size="default" onClick={onBookClick}>
+            Book a call
           </Button>
         </div>
 
@@ -49,8 +49,8 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <Button variant="hero" size="lg" className="w-full" asChild>
-            <a href="#book">Book a call</a>
+          <Button variant="hero" size="lg" className="w-full" onClick={() => { setOpen(false); onBookClick(); }}>
+            Book a call
           </Button>
         </motion.div>
       )}

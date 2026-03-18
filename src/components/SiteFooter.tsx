@@ -16,8 +16,8 @@ const SiteFooter = () => (
         <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
       </div>
 
-      <Button variant="hero" size="default" asChild>
-        <a href="#book">Book a call</a>
+      <Button variant="hero" size="default" onClick={() => window.dispatchEvent(new CustomEvent("open-booking-modal"))}>
+        Book a call
       </Button>
     </div>
   </footer>
