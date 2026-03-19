@@ -7,17 +7,17 @@ const SiteFooter = () => (
         <div className="font-display text-lg font-bold">
           Django<span className="text-primary">Labs</span>
         </div>
-        <p className="text-sm text-muted-foreground">Built with Django. Designed for scale.</p>
+        <p className="text-sm text-muted-foreground">Создано на Django. Спроектировано для масштаба.</p>
       </div>
 
       <div className="flex items-center gap-6">
-        <a href="#products" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Products</a>
-        <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
-        <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+        <a href="#products" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Продукты</a>
+        <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Услуги</a>
+        <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
       </div>
 
       <Button variant="hero" size="default" onClick={() => window.dispatchEvent(new CustomEvent("open-booking-modal"))}>
-        Book a call
+        Записаться на звонок
       </Button>
     </div>
   </footer>

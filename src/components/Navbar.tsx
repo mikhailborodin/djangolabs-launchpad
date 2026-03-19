@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
-  { label: "Products", href: "#products" },
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "Results", href: "#results" },
+  { label: "Продукты", href: "#products" },
+  { label: "Услуги", href: "#services" },
+  { label: "Процесс", href: "#process" },
+  { label: "Результаты", href: "#results" },
 ];
 
 const Navbar = ({ onBookClick }: { onBookClick: () => void }) => {
@@ -29,7 +29,7 @@ const Navbar = ({ onBookClick }: { onBookClick: () => void }) => {
           ))}
           <ThemeToggle />
           <Button variant="hero" size="default" onClick={onBookClick}>
-            Book a call
+            Записаться на звонок
           </Button>
         </div>
 
@@ -50,7 +50,7 @@ const Navbar = ({ onBookClick }: { onBookClick: () => void }) => {
             </a>
           ))}
           <Button variant="hero" size="lg" className="w-full" onClick={() => { setOpen(false); onBookClick(); }}>
-            Book a call
+            Записаться на звонок
           </Button>
         </motion.div>
       )}

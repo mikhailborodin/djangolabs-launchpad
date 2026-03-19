@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button";
 const cases = [
   {
     icon: TrendingUp,
-    title: "E-commerce platform",
-    result: "Increased conversion by 35%",
-    desc: "After rebuilding backend and checkout flow",
+    title: "E-commerce-платформа",
+    result: "Конверсия выросла на 35%",
+    desc: "После переработки бэкенда и потока оформления заказа",
   },
   {
     icon: Clock,
-    title: "SaaS product",
-    result: "Launched MVP in 4 weeks",
-    desc: "With scalable architecture from day one",
+    title: "SaaS-продукт",
+    result: "Запустили MVP за 4 недели",
+    desc: "С масштабируемой архитектурой с первого дня",
   },
 ];
 
@@ -21,8 +21,8 @@ const CaseStudies = () => (
   <section id="results" className="py-24 bg-secondary/20">
     <div className="container space-y-16">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="max-w-2xl">
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">Real results</h2>
-        <p className="text-muted-foreground text-lg">Not hypothetical. Not "potential." These actually happened.</p>
+        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">Реальные результаты</h2>
+        <p className="text-muted-foreground text-lg">Не гипотезы. Не «потенциал». Это уже произошло.</p>
       </motion.div>
 
       <div className="grid md:grid-cols-2 gap-6">
@@ -47,7 +47,7 @@ const CaseStudies = () => (
 
       <div className="text-center">
         <Button variant="hero" size="lg" asChild>
-          <a href="#book">Get results like these <ArrowRight size={16} /></a>
+          <a href="#book">Получить такие же результаты <ArrowRight size={16} /></a>
         </Button>
       </div>
     </div>

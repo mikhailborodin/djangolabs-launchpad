@@ -6,17 +6,17 @@ const products = [
   {
     icon: Calendar,
     name: "Calendlab",
-    desc: "Booking infrastructure that just works — no friction, no missed meetings.",
+    desc: "Инфраструктура записи, которая просто работает — без лишних шагов и пропущенных встреч.",
   },
   {
     icon: FileText,
     name: "Formlab",
-    desc: "Collect data, feedback, and insights with flexible online forms.",
+    desc: "Собирайте данные, обратную связь и инсайты с помощью гибких онлайн-форм.",
   },
   {
     icon: Mic,
     name: "Vocaro",
-    desc: "Communication tools built for real-time interaction and clarity.",
+    desc: "Инструменты коммуникации, созданные для взаимодействия в реальном времени и ясности.",
   },
 ];
 
@@ -29,8 +29,8 @@ const ProductsSection = () => (
         viewport={{ once: true }}
         className="max-w-2xl"
       >
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">Products we build</h2>
-        <p className="text-muted-foreground text-lg">Real products, already in production. Here's what we've shipped.</p>
+        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">Продукты, которые мы создаем</h2>
+        <p className="text-muted-foreground text-lg">Реальные продукты, уже работающие в продакшене. Вот что мы выпустили.</p>
       </motion.div>
 
       <div className="grid md:grid-cols-3 gap-6">
@@ -54,7 +54,7 @@ const ProductsSection = () => (
 
       <div className="text-center">
         <Button variant="heroOutline" size="lg" asChild>
-          <a href="#book">Discuss your product idea</a>
+          <a href="#book">Обсудить идею продукта</a>
         </Button>
       </div>
     </div>

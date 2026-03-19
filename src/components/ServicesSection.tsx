@@ -3,18 +3,18 @@ import { Zap, Server, Wrench, ShoppingCart, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const services = [
-  { icon: Zap, title: "Launch your SaaS fast", desc: "Go from idea to working product in weeks, not months." },
-  { icon: Server, title: "Build scalable backend systems", desc: "Clean architecture that won't break when you grow." },
-  { icon: Wrench, title: "Improve existing products", desc: "Fix bottlenecks, speed things up, and make your system reliable." },
-  { icon: ShoppingCart, title: "E-commerce that converts", desc: "Fast, stable, and optimized for real users." },
+  { icon: Zap, title: "Запустим ваш SaaS быстро", desc: "От идеи до работающего продукта за недели, а не месяцы." },
+  { icon: Server, title: "Построим масштабируемый бэкенд", desc: "Чистая архитектура, которая не сломается, когда вы вырастете." },
+  { icon: Wrench, title: "Улучшим существующий продукт", desc: "Уберем узкие места, ускорим систему и сделаем ее надежной." },
+  { icon: ShoppingCart, title: "E-commerce, который продает", desc: "Быстро, стабильно и оптимизировано для реальных пользователей." },
 ];
 
 const ServicesSection = () => (
   <section id="services" className="py-24 bg-secondary/20">
     <div className="container space-y-16">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="max-w-2xl">
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">What we can do for you</h2>
-        <p className="text-muted-foreground text-lg">From MVPs to production systems — we handle the hard parts.</p>
+        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">Что мы можем сделать для вас</h2>
+        <p className="text-muted-foreground text-lg">От MVP до продакшен-систем — берем на себя сложные части.</p>
       </motion.div>
 
       <div className="grid sm:grid-cols-2 gap-6">
@@ -38,7 +38,7 @@ const ServicesSection = () => (
 
       <div className="text-center">
         <Button variant="hero" size="lg" onClick={() => window.dispatchEvent(new CustomEvent("open-booking-modal"))}>
-          Book a call <ArrowRight size={16} />
+          Записаться на звонок <ArrowRight size={16} />
         </Button>
       </div>
     </div>

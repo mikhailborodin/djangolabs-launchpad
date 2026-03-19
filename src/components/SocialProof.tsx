@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Rocket, ShieldCheck, TrendingUp } from "lucide-react";
 
 const stats = [
-  { icon: Rocket, label: "10+ products launched" },
-  { icon: ShieldCheck, label: "Production-ready code from day one" },
-  { icon: TrendingUp, label: "Built for scale, not for demo" },
+  { icon: Rocket, label: "10+ запущенных продуктов" },
+  { icon: ShieldCheck, label: "Код, готовый к продакшену, с первого дня" },
+  { icon: TrendingUp, label: "Создано для масштаба, а не для демо" },
 ];
 
 const SocialProof = () => (

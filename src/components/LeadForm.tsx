@@ -31,8 +31,8 @@ const LeadForm = () => {
           className="max-w-2xl mx-auto space-y-8"
         >
           <div className="text-center space-y-3">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold">Start your project</h2>
-            <p className="text-muted-foreground">Tell us what you're building — we'll get back within 24 hours.</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold">Начните проект</h2>
+            <p className="text-muted-foreground">Расскажите, что вы хотите создать, и мы ответим в течение 24 часов.</p>
           </div>
 
           <iframe
@@ -43,7 +43,7 @@ const LeadForm = () => {
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}
-            title="Build Your Web Service"
+            title="Обсуждение веб-проекта"
           />
         </motion.div>
       </div>

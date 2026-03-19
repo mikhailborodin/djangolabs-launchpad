@@ -23,7 +23,7 @@ const ThemeToggle = () => {
   }, [dark]);
 
   return (
-    <Button variant="ghost" size="icon" onClick={() => setDark(!dark)} aria-label="Toggle theme">
+    <Button variant="ghost" size="icon" onClick={() => setDark(!dark)} aria-label="Переключить тему">
       {dark ? <Sun size={18} /> : <Moon size={18} />}
     </Button>
   );

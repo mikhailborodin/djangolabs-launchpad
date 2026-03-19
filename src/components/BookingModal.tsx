@@ -56,9 +56,9 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl w-[95vw] max-h-[90vh] overflow-y-auto p-0">
+        <DialogContent className="max-w-3xl w-[95vw] max-h-[90vh] overflow-y-auto p-0">
         <DialogHeader className="p-6 pb-0">
-          <DialogTitle className="font-display text-xl">Book a call</DialogTitle>
+          <DialogTitle className="font-display text-xl">Записаться на звонок</DialogTitle>
         </DialogHeader>
         <div className="px-6 pb-6">
           <div id="calendlab-scheduler" ref={containerRef} style={{ minHeight: 820 }} />

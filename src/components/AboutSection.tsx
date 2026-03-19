@@ -9,9 +9,9 @@ const AboutSection = () => (
         viewport={{ once: true }}
         className="max-w-3xl mx-auto text-center space-y-6"
       >
-        <h2 className="font-display text-3xl sm:text-4xl font-bold">About DjangoLabs</h2>
+        <h2 className="font-display text-3xl sm:text-4xl font-bold">О DjangoLabs</h2>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          DjangoLabs is a development laboratory focused on building scalable web systems. We care about architecture, performance, and long-term reliability — not just shipping fast, but shipping right.
+          DjangoLabs — это лаборатория разработки, сфокусированная на создании масштабируемых веб-систем. Нам важны архитектура, производительность и долгосрочная надежность — не просто выпустить быстро, а сделать правильно.
         </p>
       </motion.div>
     </div>

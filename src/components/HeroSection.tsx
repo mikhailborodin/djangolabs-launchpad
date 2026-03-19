@@ -14,29 +14,29 @@ const HeroSection = () => (
       >
         <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary">
           <Clock size={14} />
-          Limited availability — we take on 3 projects/month
+          Ограниченное количество мест — берем 3 проекта в месяц
         </div>
 
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
-          Build scalable web products with Django —{" "}
-          <span className="text-gradient">fast.</span>
+          Создаем масштабируемые веб-продукты на Django{" "}
+          <span className="text-gradient">быстро.</span>
         </h1>
 
         <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-          We design, build, and launch production-ready systems for startups and growing businesses. No fluff. Just working products.
+          Проектируем, разрабатываем и запускаем системы, готовые к продакшену, для стартапов и растущих компаний. Без воды. Только рабочие продукты.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Button variant="hero" size="xl" onClick={() => window.dispatchEvent(new CustomEvent("open-booking-modal"))}>
-              Book a call <ArrowRight size={18} />
+              Записаться на звонок <ArrowRight size={18} />
           </Button>
           <Button variant="heroOutline" size="xl" asChild>
-            <a href="#contact">Get project estimate</a>
+            <a href="#contact">Получить оценку проекта</a>
           </Button>
         </div>
 
         <p className="text-sm text-muted-foreground">
-          Trusted by startups and teams that need reliable backend systems
+          Нам доверяют стартапы и команды, которым нужен надежный бэкенд
         </p>
       </motion.div>
 
@@ -46,7 +46,7 @@ const HeroSection = () => (
         transition={{ duration: 0.8, delay: 0.2 }}
         className="hidden lg:block"
       >
-        <img src={heroImg} alt="Abstract system architecture illustration" className="w-full rounded-2xl glow-border" />
+        <img src={heroImg} alt="Абстрактная иллюстрация архитектуры системы" className="w-full rounded-2xl glow-border" />
       </motion.div>
     </div>
   </section>
